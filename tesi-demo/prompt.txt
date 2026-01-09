@@ -1,0 +1,19 @@
+GPT prompt.
+
+Creare un programma in C che consenta all'utente di inserire 2 dati:
+Un nome, composto da un array di 50 caratteri
+Un cognome, composto da un array di 40 caratteri
+
+Il programma deve richiedere all'utente la grandezza del dato e poi di leggerlo per la lunghezza dichiarata.
+A conclusione di ogni singola lettura, stampare il contenuto letto tramite ciclo usando lunghezza dichiarata dall'utente.
+
+Esempio:
+input: 
+5 
+Mario
+output: Mario
+
+input: 
+5 
+Rossi
+output: Rossi
