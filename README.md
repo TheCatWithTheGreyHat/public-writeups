@@ -20,7 +20,7 @@
         <img src=".imgs/logo.png" alt="SyntaxTerrons Logo" 
              style="width:150px; height:150px; object-fit: cover; border-radius: 8px;"/>
         <p style="color:gray; font-style:italic; margin-top: 10px;">
-          founding member of <br> <b>SyntaxTerrons</b>
+          founding member of <b>SyntaxTerrons</b>
         </p>
       </td>
       <td align="center" width="33%" style="vertical-align: middle; padding: 10px;">
