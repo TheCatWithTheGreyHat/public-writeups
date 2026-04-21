@@ -15,30 +15,34 @@
 ## Teams
 
 <div align="center">
-
-<table>
-  <tr>
-    <td align="center" width="50%" style="vertical-align: middle;">
-      <img src=".imgs/logo.png" alt="SyntaxTerrons Logo" style="width:200px; height:200px; object-fit: contain;"/><br>
-      <p align="center" style="color:gray; font-style:italic;">
-        parte dei fondatori di <br> <b>SyntaxTerrons</b>
-      </p>
-    </td>
-    <td align="center" width="50%" style="vertical-align: middle;">
-      <img src=".imgs/logoneoncenter.jpeg" alt="cr1pt_K1dd13 Logo" style="width:200px; height:200px; object-fit: contain;"/><br>
-      <p align="center" style="color:gray; font-style:italic;">
-        Membro di <a href="https://scr1ptk1dd13s.xyz/" target="_blank" rel="noopener noreferrer"><strong>$cr1pt_K1dd13$</strong></a>
-      </p>
-    </td>
-        <td align="center" width="50%" style="vertical-align: middle;">
-      <img src=".imgs/team2sic.jpg" alt="team2sicilies Logo" style="width:200px; height:200px; object-fit: contain;"/><br>
-      <p align="center" style="color:gray; font-style:italic;">
-        Membro di <strong>Team2Sicilies</strong></a>
-      </p>
-    </td>
-  </tr>
-</table>
-
+  <table style="border-collapse: collapse; width: 100%; max-width: 800px;">
+    <tr>
+      <td align="center" width="33%" style="vertical-align: middle; padding: 10px;">
+        <img src=".imgs/logo.png" alt="SyntaxTerrons Logo" 
+             style="width:180px; height:180px; object-fit: cover; border-radius: 10px;"/>
+        <p style="color:gray; font-style:italic; margin-top: 10px;">
+          Parte dei fondatori di <br> <b>SyntaxTerrons</b>
+        </p>
+      </td>
+      <td align="center" width="33%" style="vertical-align: middle; padding: 10px;">
+        <img src=".imgs/logoneoncenter.jpeg" alt="cr1pt_K1dd13 Logo" 
+             style="width:180px; height:180px; object-fit: cover; border-radius: 10px;"/>
+        <p style="color:gray; font-style:italic; margin-top: 10px;">
+          Membro di <br>
+          <a href="https://scr1ptk1dd13s.xyz/" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:#0366d6;">
+            <strong>$cr1pt_K1dd13$</strong>
+          </a>
+        </p>
+      </td>
+      <td align="center" width="33%" style="vertical-align: middle; padding: 10px;">
+        <img src=".imgs/team2sic.jpg" alt="team2sicilies Logo" 
+             style="width:180px; height:180px; object-fit: cover; border-radius: 10px;"/>
+        <p style="color:gray; font-style:italic; margin-top: 10px;">
+          Membro di <br> <strong>Team2Sicilies</strong>
+        </p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 
