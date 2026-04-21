@@ -29,6 +29,14 @@
          member of <br> <a href="https://scr1ptk1dd13s.xyz/" target="_blank" rel="noopener noreferrer"><strong>$cr1pt_K1dd13$</strong></a>
       </p>
     </td>
+        </td>
+        <td align="center" width="50%" style="vertical-align: middle;">
+      <img src=".imgs/team2sic.jpg" alt="team2sicilies Logo" style="width:200px; height:200px; object-fit: contain;"/><br>
+      <p align="center" style="color:gray; font-style:italic;">
+        member of <strong>Team2Sicilies</strong></a>
+      </p>
+    </td>
+  </tr>
   </tr>
 </table>
 
