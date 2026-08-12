@@ -81,7 +81,7 @@ Interestingly, the output contained a dedicated mount for the secret:
 tmpfs /srv/what_even_is_this_file_name.txt tmpfs ro,relatime,inode64 0 0
 ```
 
-> **Note:** the flag file was apparently mounted separately into the container as a read-only `tmpfs`. This could be due to the flag being generated for each instance and then mounted as a read-only `tmpfs`, but I'm not entirely sure why the flag was here. Welp, unintentional as a path.
+> **Note:** the flag file was apparently mounted separately into the container as a read-only `tmpfs`. This could be due to the flag being generated for each instance and then mounted as a read-only `tmpfs`, but I'm not entirely sure why the flag was here. Welp, unintentional as a path. My theory is that this actual docker was inside another container-ish environment that, with the press of the button from the website, generated flag and mounted it in this one.
 
 
 Since `/proc/<pid>/mounts` exposes the mount points visible to the process, this revealed the flag's filename:
