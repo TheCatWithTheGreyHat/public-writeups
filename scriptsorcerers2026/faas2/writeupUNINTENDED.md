@@ -216,4 +216,7 @@ The interesting part of the exploit is that `curl` itself became the primitive u
 
 In practice, this meant I could read arbitrary files accessible to the process, not just the flag. Depending on which `curl` options were available and the permissions of the target process, the same technique could potentially be extended to overwrite files as well.
 
-Thanks.
+---
+
+> **Thanks for reading!**  
+> *GreyHat, il gatto con la lupara*
