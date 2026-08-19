@@ -1,0 +1,15 @@
+To solve the challenge, from what I could tell, the only characters allowed were:
+$()/*-<>{} and such, i didn't check all.
+
+No spaces, maximum of 10 characters.
+"ls *" for example is executed only as "ls"
+
+The flag was in:
+etc-flag-might-be-in-here/is-this-the-flag-1a9210262dfd
+
+To read it, I used:
+$(</*-*/)
+Basically, this makes the shell read the file and pass its contents as a command.
+That obviously fails, but that's exactly what I wanted:
+
+/nix/store/h0z34rqk6q8cm3kzz6xnfiwgg6c4j45z-jail/bin/jail: line 21: gaslightCTF{b3w4r3_th3_r4mp0calys3_002be415f8b5}: command not found

@@ -1,0 +1,47 @@
+Basically, the program did something like this: when executed, its privileges were dropped to user level (badcat user), and only when you tried to read the flag the privileges got raised to root.
+
+The flag was owned only by root, with read permission, and the file descriptor used to open it never closes, leaving a dandling FD.
+
+The slurp function was essentially doing:
+while (true) {
+      read(fd) and puts(...);
+}
+close(fd);
+return;
+
+In Linux, the OS assigns file descriptors by picking the first available one, so open() picks up the first FD not used.
+
+With this in mind, if we do:
+
+badcat -
+
+the program calls slurp(0), so it reads from stdin. Once finished, it calls close(0), which releases file descriptor 0.
+
+And that's what we can abuse.
+
+What i need to do is to read from stdin, release the FD 0, then open the flag which will get FD 0 assigned, and remembering that the flag read DOES NOT close the FD, we can call slurp(0) to read the rest of it.
+
+print '' | badcat - /flag - badcat
+
+With this command, i did:
+
+1. Make the program call slurp(0), so it reads from stdin.
+
+2. When slurp(0) finishes, it calls close(0).
+
+3. FD 0 is now free.
+
+4. The program opens /flag.
+
+5. Since 0 is the first FD available, open("/flag", ...) assigns **FD 0** to the flag.
+
+6. The file descriptor 0 never closes after reading the flag.
+
+7. The slurp(0) is called.
+
+8. But this time, FD 0 is pointing to the flag.
+
+9. Therefore, read(0, ...) reads the flag contents.
+
+
+sorry for bad english
